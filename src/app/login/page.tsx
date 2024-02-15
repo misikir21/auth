@@ -39,7 +39,7 @@ function login() {
       >
         login here
       </button>
-      <Link href="/login">Visit signup page</Link>
+      <Link href="/signup">Visit signup page</Link>
     </div>
   );
 }
