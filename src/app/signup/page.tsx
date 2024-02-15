@@ -8,6 +8,7 @@ function signup() {
     password: "",
     username: "",
   });
+  const onSignup = async () => {};
 
   return (
     <div className="flex">
