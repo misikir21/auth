@@ -14,6 +14,8 @@ export async function POST(request: NextRequest) {
     if (user) {
       return NextResponse.json({ error: "user exist" }, { status: 400 });
     }
+    const salt = await bcryptjs.genSalt(10);
+    const hashedpassword = await bcryptjs.hash(password, salt);
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 5000 });
   }
